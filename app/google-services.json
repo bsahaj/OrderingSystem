@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "350653714262",
+    "firebase_url": "https://ordering-system-app.firebaseio.com",
+    "project_id": "ordering-system-app",
+    "storage_bucket": "ordering-system-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350653714262:android:515a78ff566ec125",
+        "android_client_info": {
+          "package_name": "com.sahajb.orderingsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350653714262-7u39k0s5bt701mulq6jvtm2536kp5ij9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sahajb.orderingsystem",
+            "certificate_hash": "25a5df3f67a498c12a992220e2d507c8e4541945"
+          }
+        },
+        {
+          "client_id": "350653714262-mek5p193ufhcm0ishetk83v3sb3kjdc8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYXhQR-7acsj2jMq1BwDBt34B3p9TaKrw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "350653714262-mek5p193ufhcm0ishetk83v3sb3kjdc8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

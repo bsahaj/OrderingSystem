@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#424242"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#424242">
+
+        <TextView
+            android:id="@+id/reviewOrderText"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:text="Review Order"
+            android:textColor="@android:color/white"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/breakfastQuantityText"
+            android:text="Breakfast Quantity: "
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reviewOrderText"
+            android:layout_marginTop="20dp"
+           />
+
+        <TextView
+            android:id="@+id/breakfastQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reviewOrderText"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="48dp"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+         />
+
+        <TextView
+            android:id="@+id/entreeQuantityText"
+            android:text="Entree Quantity: "
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/breakfastQuantityText"
+            />
+        <TextView
+            android:id="@+id/entreeQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/breakfastQuantity"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="48dp"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/dessertQuantityText"
+            android:text="Dessert Quantity: "
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/entreeQuantityText"
+            />
+        <TextView
+            android:id="@+id/dessertQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/entreeQuantity"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="48dp"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            />
+        <View
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/dessertQuantity"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff" />
+        <TextView
+            android:id="@+id/totalCostText"
+            android:text="Total Cost: "
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            />
+        <TextView
+            android:id="@+id/totalCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="48dp"
+            android:text="0.0"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            />
+
+        <Button
+            android:id="@+id/placeOrderButton"
+            android:text="Place Order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/totalCostText"
+            android:layout_marginTop="35dp"
+            />
+
+
+
+    </RelativeLayout>
+</ScrollView>

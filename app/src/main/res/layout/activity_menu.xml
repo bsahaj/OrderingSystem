@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#424242"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#424242"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/breakfastText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Breakfast"
+            android:textColor="@android:color/white"
+            android:textSize="50dp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/breakfastView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/breakfastText"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="15dp"
+            app:cardMaxElevation="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/avocadoToastImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:src="@drawable/avocadotoast" />
+                <TextView
+                    android:id="@+id/avocadoToastText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/avocadoToastImage"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Avocado Toast"
+                    android:textSize="30dp" />
+                <TextView
+                    android:id="@+id/avocadoToastPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/avocadoToastText"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="$5.99"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/avocadoToastDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/avocadoToastPrice"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="description"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/addBreakfastButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/avocadoToastDescription"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="ADD" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/entreeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/breakfastView"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Entree"
+            android:textColor="@android:color/white"
+            android:textSize="50dp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/entreeView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/entreeText"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="15dp"
+            app:cardMaxElevation="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/padThaiImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:src="@drawable/padthai" />
+                <TextView
+                    android:id="@+id/padThaiText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/padThaiImage"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Pad Thai"
+                    android:textSize="30dp" />
+                <TextView
+                    android:id="@+id/padTaiPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/padThaiText"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="$9.99"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/padThaiDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/padTaiPrice"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="description"
+                    android:textSize="20dp" />
+                <Button
+                    android:id="@+id/addEntreeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/padThaiDescription"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="ADD" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/dessertText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/entreeView"
+            android:layout_marginTop="21dp"
+            android:gravity="center"
+            android:text="Dessert"
+            android:textColor="@android:color/white"
+            android:textSize="50dp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/dessertView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dessertText"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="15dp"
+            app:cardMaxElevation="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/desertImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:src="@drawable/keylimerolls" />
+                <TextView
+                    android:id="@+id/keyLimeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/desertImage"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Key Lime Rolls"
+                    android:textSize="30dp" />
+                <TextView
+                    android:id="@+id/keyLimePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/keyLimeText"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="$11.99"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/keyLimeDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/keyLimePrice"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="description"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/addDessertButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/keyLimeDescription"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="ADD" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/doneButton"
+            android:text="Done"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/dessertView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorPrimary"/>
+        <Button
+            android:id="@+id/cancelButton"
+            android:text="Cancel"
+            android:layout_below="@+id/doneButton"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            />
+
+    </RelativeLayout>
+</ScrollView>
